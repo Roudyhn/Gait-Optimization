@@ -1,5 +1,82 @@
-The goal of this research is to optimize the gait of humanoid robots using traditional Quadratic Programming (QP). The goal is to formulate the gait-planning
-problem as a restricted optimization problem in order to provide stable and effective walking trajectories. While meeting physical restrictions including robot
-dynamics, balancing requirements, support-polygon limits, and contact constraints, the QP framework minimizes tracking and stability mistakes.
+# 🤖 Humanoid Gait Optimization using Quadratic Programming
 
-The Repository is divided into a coding part and a mathematical part (Documentation). 
+<p align="center">
+  <b>Optimization-based gait planning for stable and efficient humanoid locomotion</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?logo=python">
+  <img src="https://img.shields.io/badge/Optimization-QP-orange">
+  <img src="https://img.shields.io/badge/Robotics-Humanoid-green">
+  <img src="https://img.shields.io/badge/Status-Research%20Project-purple">
+</p>
+
+---
+
+## 📌 Overview
+
+This repository presents a **humanoid gait optimization framework based on classical Quadratic Programming (QP)**.
+
+The objective is to generate stable walking trajectories while satisfying the physical constraints of humanoid locomotion.
+
+The optimization framework considers:
+
+- 🦿 Robot dynamics
+- ⚖️ Balance and stability
+- 👣 Support polygon constraints
+- 🔗 Contact constraints
+- 🎯 Trajectory tracking
+- 📉 Optimization of gait behavior
+
+The project combines both the **mathematical formulation** of the gait-planning problem and its **Python implementation**.
+
+---
+
+## 🎯 Research Objective
+
+The main objective is to formulate humanoid gait generation as a constrained optimization problem:
+
+\[
+\boxed{
+\text{Find the optimal walking trajectory while respecting robot dynamics and stability constraints}
+}
+\]
+
+The Quadratic Program minimizes tracking and stability errors while maintaining physically feasible motion.
+
+---
+
+## 🧠 Framework
+
+```text
+Desired Walking Motion
+        │
+        ▼
+┌───────────────────┐
+│ Gait / Footstep   │
+│     Planning      │
+└─────────┬─────────┘
+          │
+          ▼
+┌───────────────────┐
+│ Reference COM /   │
+│ DCM Trajectories  │
+└─────────┬─────────┘
+          │
+          ▼
+┌───────────────────┐
+│ Quadratic Program │
+│       (QP)        │
+└─────────┬─────────┘
+          │
+          ▼
+┌───────────────────┐
+│ Constraints       │
+│ • Dynamics        │
+│ • Contact         │
+│ • Support Polygon │
+│ • Stability       │
+└─────────┬─────────┘
+          │
+          ▼
+   Optimized Gait
