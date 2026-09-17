@@ -36,11 +36,9 @@ The project combines both the **mathematical formulation** of the gait-planning 
 
 The main objective is to formulate humanoid gait generation as a constrained optimization problem:
 
-\[
-\boxed{
-\text{Find the optimal walking trajectory while respecting robot dynamics and stability constraints}
-}
-\]
+
+Find the optimal walking trajectory while respecting robot dynamics and stability constraints
+
 
 The Quadratic Program minimizes tracking and stability errors while maintaining physically feasible motion.
 
