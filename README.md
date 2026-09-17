@@ -1,4 +1,4 @@
-# 🤖 Humanoid Gait Optimization using Quadratic Programming
+# 🤖 # Humanoid Gait Optimization using Quadratic Programming
 
 <p align="center">
   <b>Optimization-based gait planning for stable and efficient humanoid locomotion</b>
@@ -13,7 +13,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 This repository presents a **humanoid gait optimization framework based on classical Quadratic Programming (QP)**.
 
@@ -21,18 +21,18 @@ The objective is to generate stable walking trajectories while satisfying the ph
 
 The optimization framework considers:
 
-- 🦿 Robot dynamics
-- ⚖️ Balance and stability
-- 👣 Support polygon constraints
-- 🔗 Contact constraints
-- 🎯 Trajectory tracking
-- 📉 Optimization of gait behavior
+- Robot dynamics
+- Balance and stability
+- Support polygon constraints
+- Contact constraints
+- Trajectory tracking
+- Optimization of gait behavior
 
 The project combines both the **mathematical formulation** of the gait-planning problem and its **Python implementation**.
 
 ---
 
-## 🎯 Research Objective
+## Research Objective
 
 The main objective is to formulate humanoid gait generation as a constrained optimization problem:
 
@@ -46,7 +46,7 @@ The Quadratic Program minimizes tracking and stability errors while maintaining 
 
 ---
 
-## 🧠 Framework
+## Framework
 
 ```text
 Desired Walking Motion
@@ -80,3 +80,22 @@ Desired Walking Motion
           │
           ▼
    Optimized Gait
+
+
+
+
+Gait-Optimization/
+│
+├── 📄 Documentation.pdf
+│   └── Mathematical formulation and theoretical background
+│
+├── 🐍 locomotion_test_prime.py
+│   └── Locomotion testing and simulation
+│
+├── 🐍 themis_gait_prime.py
+│   └── Main gait generation framework
+│
+├── 🐍 themis_wbc_qp.py
+│   └── Quadratic Programming / Whole-Body Control implementation
+│
+└── 📖 README.md
